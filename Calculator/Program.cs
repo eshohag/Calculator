@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Library;
+using System;
 
 namespace Calculator
 {
@@ -10,6 +7,12 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter your two double or interger number:");
+            double firstNumber = Convert.ToDouble(Console.ReadLine());
+            double secondNumber = Convert.ToDouble(Console.ReadLine());
+            double result = Calculation.Addition(firstNumber, secondNumber);
+            Console.WriteLine($"Your Addition is {result}");
+            Console.ReadKey();
         }
     }
 }
